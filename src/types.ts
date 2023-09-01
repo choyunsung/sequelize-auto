@@ -33,6 +33,8 @@ export interface IndexSpec {
   unique: boolean;
   fields: IndexField[];
 
+  default: boolean;
+  allowNull: boolean;
   /** postgres only */
   indkey: string;
   /** postgres only */
@@ -171,6 +173,8 @@ export interface AutoOptions {
   skipTables?: string[];
   /** Fields to skip exporting */
   skipFields?: string[];
+  defaultFnc?: any;
+  createFnc?: any;
   /** Whether to indent with spaces instead of tabs (default true) */
   spaces?: boolean;
   /** File where database is stored (sqlite only) */

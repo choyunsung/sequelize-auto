@@ -19,6 +19,8 @@ export class AutoGenerator {
     caseModel?: CaseOption;
     caseProp?: CaseOption;
     caseFile?: CaseFileOption;
+    defaultFnc?: (tableName: string, fieldName: string, field: Field) => string | Function;
+    createFnc?: (tableName: string, fieldName: string, field: Field) => string | Function;
     skipFields?: string[];
     additional?: any;
     schema?: string;

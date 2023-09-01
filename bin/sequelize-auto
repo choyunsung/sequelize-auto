@@ -130,6 +130,14 @@ const argv = require('yargs')
     description: 'Use `sequelize.define` instead of `init` for es6|esm|ts',
     type: 'boolean'
   })
+  .option('createFnc', {
+    description: 'Use function to create models instead of literal',
+    type: 'function'
+  })
+  .option('defaultFnc', {
+    description: 'Use function to create default values instead of literal',
+    type: 'function'
+  })
   .option('singularize', {
     description: 'Singularize model and file names from plural table names',
     type: 'boolean',

@@ -14,6 +14,8 @@ export interface AutoOptions extends Options {
   typescript: boolean;
   spaces: boolean;
   indentation: number;
+  createFnc: any;
+  defaultFnc: any;
 }
 
 export interface Config {
